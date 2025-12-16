@@ -25,33 +25,35 @@ function LeftSideBar() {
     "Rural Lending",
   ];
   return (
-    <div className=" w-[90%] h-full">
-      <div className=" w-full h-16 flex flex-col px-2 border-b pb-3 border-b-gray-500">
-        <p className="font-bold text-sm text-gray-500">42.00 % Storage Full</p>
+    <div className=" w-[90%] h-[calc(100vh-112px)] pl-2 font-roboto">
+      <div className=" w-full h-14 flex flex-col px-2 border-b-2  border-b-gray-300">
+        <p className="font-bold text-[13px] text-gray-400">
+          42.00 % storage Full
+        </p>
 
-        <p className="font-semibold text-gray-500 text-xs mt-1.5">
+        <p className="font-semibold text-gray-400 text-[10px] mt-1.5">
           4.15 GB of 10 GB used
         </p>
       </div>
-      <div className=" w-full h-36 mt-2 border-b border-b-gray-500">
-        <div className="w-full h-8 flex items-center gap-4 px-2 hover:bg-gray-100 rounded-md cursor-pointer">
-          <MdInventory2 size={20} />
+      <div className=" w-full h-32 mt-2 border-b-2 border-b-gray-300 text-gray-500 text-sm pl-2 flex flex-col items-center justify-items-start">
+        <div className="w-full h-8 flex  gap-2  hover:bg-gray-100 rounded-md cursor-pointer">
+          <MdInventory2 size={18} />
           <p className="font-bold text-gray-800">All Assets</p>
         </div>
-        <div className="w-full h-8 flex items-center gap-4 px-2 hover:bg-gray-100 rounded-md cursor-pointer">
-          <MdFolder size={20} />
+        <div className="w-full h-8 flex  gap-2  hover:bg-gray-100 rounded-md cursor-pointer">
+          <MdFolder size={19} />
           <p>My Assets</p>
         </div>
-        <div className="w-full h-8 flex items-center gap-4 px-2 hover:bg-gray-100 rounded-md cursor-pointer">
-          <MdDelete size={20} />
+        <div className="w-full h-8 flex  gap-2  hover:bg-gray-100 rounded-md cursor-pointer">
+          <MdDelete size={22} />
           <p>Trash</p>
         </div>
-        <div className="w-full h-8 flex items-center gap-4 px-2 hover:bg-gray-100 rounded-md cursor-pointer">
-          <MdSync size={20} />
+        <div className="w-full h-8 flex  gap-2  hover:bg-gray-100 rounded-md cursor-pointer">
+          <MdSync size={21} />
           <p>Sync</p>
         </div>
       </div>
-      <div className=" w-full  mt-2 pl-2 border-b border-b-gray-500 mb-3 pb-3">
+      <div className=" w-full  mt-3 pl-2 border-b-2 border-b-gray-300 mb-3 pb-3 ">
         <Filter />
         {/* <div className="flex gap-2 justify-start items-center">
           <MdFilterList size={20} />

@@ -23,13 +23,13 @@ function Home() {
     <>
       <div className="fixed top-0 left-0 right-0 z-10">
         <Header />
-        <div className="flex justify-center  h-9 w-full  bg-white">
-          <div className="flex border-b border-gray-300 h-9 w-[97%] ">
-            <div className=" h-8 w-[75%]">
+        <div className="flex justify-center  h-10 w-full  bg-white">
+          <div className="flex border-b border-gray-300 h-full w-[97%] ">
+            <div className=" h-8 w-[70%]">
               <p className="font-bold text-xs pl-4 p-2">DAM/Folder</p>
             </div>
-            <div className=" h-8  w-[25%] flex justify-evenly items-center">
-              <div className="flex items-center">
+            <div className=" h-full  w-[30%] flex justify-evenly items-center ">
+              <div className="flex items-center gap-1">
                 <input
                   type="text"
                   name="search"
@@ -42,13 +42,15 @@ function Home() {
                 />
                 {searchEnabled ? (
                   <MdClose
-                    className="text-gray-400 w-6 h-5 cursor-pointer"
+                    size={24}
+                    className="text-gray-400  cursor-pointer mt-1"
                     onClick={toggleSearch}
                   />
                 ) : (
                   <FaSearch
-                    className="text-gray-400 w-6 h-5 cursor-pointer"
+                    className="text-gray-400  cursor-pointer"
                     onClick={toggleSearch}
+                    size={20}
                   />
                 )}
               </div>
@@ -56,7 +58,8 @@ function Home() {
                 {" "}
                 <button onClick={changeView}>
                   <MdFormatListBulleted
-                    className={` w-6 h-5 mt-2 cursor-pointer  ${
+                    size={22}
+                    className={` mt-2 cursor-pointer  ${
                       !view ? "text-blue-600" : "text-gray-400"
                     }`}
                   />
@@ -66,26 +69,29 @@ function Home() {
                 {" "}
                 <button onClick={changeView}>
                   <MdGridView
+                    size={23}
                     className={` ${
                       view ? "text-blue-600" : "text-gray-400"
-                    } w-6 h-5 mt-2 cursor-pointer `}
+                    }  mt-2 cursor-pointer `}
                   />
                 </button>{" "}
               </div>
-              <button className="w-20 h-6 bg-blue-900 text-white px-2 rounded-md text-xs cursor-pointer hover:bg-blue-800">
+              <button className="w-18 h-6 bg-blue-900 text-white px-2 rounded-sm text-xs cursor-pointer hover:bg-blue-800">
                 Next
               </button>
             </div>
           </div>
         </div>
       </div>
-      <main className=" flex justify-center mt-28 ">
+      <main className=" flex justify-center mt-28 h-[calc(100vh-112px)] ">
         <div className="  flex  w-[97%]">
           <div className=" w-[13%] ">
             <LeftSideBar />
           </div>
-          <div className=" w-[87%] p-1 shadow shadow-amber-100 rounded-md ml-4 ">
-            <p className="pl-3 font-bold text-gray-400 mb-3 text-xs">Files</p>
+          <div className=" w-[87%] p-1  rounded-md ml-4 h-[calc(100vh-112px)] ">
+            <p className="pl-2 font-bold text-gray-400 mb-3 text-[13px]">
+              Files
+            </p>
             <div className="flex gap-5 flex-wrap pl-1.5">
               {view ? (
                 <>

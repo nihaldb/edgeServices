@@ -6,17 +6,17 @@ import CardDropdown from "./CardDropdown";
 
 function DashboardCard() {
   return (
-    <div className="w-[235px] h-[235px]  rounded-xl border border-gray-200 shadow-md group relative hover:bg-gray-50">
+    <div className="w-[235px] h-60  rounded-xl border border-gray-200 shadow-sm group relative hover:bg-gray-50">
       <div className="w-full h-[20%]  flex justify-items-end items-center">
-        <div className="rounded-xl bg-gray-200 h-[60%] w-[35%] ml-2 text-xs font-bold flex items-center justify-center text-gray-600">
+        <div className="rounded-xl bg-gray-200 h-[50%] w-[30%] ml-2 text-xs  flex items-center justify-center text-gray-600">
           165458
         </div>
-        <div className="flex justify-items-end w-[65%] h-[60%]  ">
-          <ul className="flex w-full justify-end px-4 gap-1.5">
+        <div className="flex justify-items-end w-[70%] h-[60%]  ">
+          <ul className="flex w-full justify-end pl-3 pr-1.5 gap-1.5 mt-1">
             <li className="invisible group-hover:visible">
               <MdOutlineEdit className="text-gray-400 cursor-pointer" />
             </li>
-            <li className=" relative group/dots">
+            <li className=" relative group/dots ">
               <HiOutlineDotsVertical className="text-gray-400 " />
               <CardDropdown />
             </li>
@@ -28,7 +28,7 @@ function DashboardCard() {
           <FiImage size={30} color="#22c55e" />
         </div>
       </div>
-      <div className="w-full h-[30%] text-wrap text-center text-sm font-medium ">
+      <div className="w-full h-[30%] text-wrap text-center text-sm font-medium pt-2">
         <p className="mx-2">
           BH to approve/reject learner request - Learner asset
         </p>

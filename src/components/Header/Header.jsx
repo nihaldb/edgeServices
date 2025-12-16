@@ -1,7 +1,12 @@
 import React from "react";
 import { FaQuestionCircle, FaUserCircle, FaSearch } from "react-icons/fa";
-import { MdGridView, MdFormatListBulleted } from "react-icons/md";
+import {
+  MdGridView,
+  MdFormatListBulleted,
+  MdKeyboardArrowUp,
+} from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
+import EdgeLogo from "./EdgeLogo";
 
 function Header({ className }) {
   const username = "edge mobeserv";
@@ -9,32 +14,35 @@ function Header({ className }) {
   return (
     <header className="flex justify-center">
       {/* <div className="   flex  justify-center"> */}
-      <div className="bg-blue-900 h-[54px] w-[97%] flex  ">
-        <div className="flex row justify-items-start h-[54px]  w-[80%]  border-amber-50">
+      <div className="bg-[#2F3C9E] h-[54px] w-[97%] flex text-[#43D3C2] ">
+        <div className="flex row  h-[54px]  w-[83%]  pl-0.5">
           <div className=" flex col justify-center items-center w-16 h-[54px]">
             <FiMenu className="h-[54px] w-6 text-white" />
           </div>
-          <div className="w-32 h-[54px] flex justify-center items-center">
+          <div className="w-28 h-[54px] flex justify-center items-center">
             {" "}
-            <p className="text-4xl text-white italic">Edge </p>
+            {/* <p className="text-4xl text-white italic">Edge </p> */}
+            <EdgeLogo />
           </div>
-          <div className=" w-16 h-[54px] flex col justify-center items-center">
+          <div className=" w-16 h-[54px] flex col justify-end items-center pt-1.5 pr-1.5">
             {" "}
-            <MdGridView className="h-[54px] w-6 text-white " />
+            <MdGridView className="h-5 w-5 text-white font-light" />
           </div>
-          <div className="w-24 h-[54px] flex justify-center items-center text-white">
-            Services
+          <div className="w-24 h-[54px] flex justify-start items-center text-white text-sm gap-1">
+            <p>Services</p>
+            <MdKeyboardArrowUp size={20} />
           </div>
         </div>
-        <div className=" flex row  h-[54px]  w-[20%]">
-          <div className="flex justify-center mt-1.5 items-center mb-2 border-r-white w-[25%]  h-[70%]">
-            {" "}
-            <FaQuestionCircle className="h-[54px] w-6 text-white " />
+        <div className=" flex row  h-[54px]  w-[17%] items-center pl-4.5">
+          <div className="w-[25%] h-full flex items-center justify-center ">
+            <div className="flex justify-end items-center mb-2  w-full  h-[50%] border-r border-r-white mt-1.5 pr-4 mr-4">
+              <FaQuestionCircle className="h-auto w-6 text-white " />
+            </div>
           </div>
-          <div className="flex justify-center items-center h-[80%] px-2.5  mx-3 mt-1.5 border-l-2 border-l-white">
+          <div className="flex justify-center items-center h-[80%]    ">
             {" "}
             <FaUserCircle className="h-[54px] w-8 text-white" />{" "}
-            <p className="ml-2 text-white">{username}</p>
+            <p className="ml-2 text-white text-sm">{username}</p>
           </div>
         </div>
       </div>

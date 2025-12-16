@@ -21,20 +21,20 @@ function Filter() {
     "K-point",
   ];
   return (
-    <div>
+    <div className="text-gray-500">
       <button
-        className="flex cursor-pointer gap-2 items-center font-bold text-gray-500"
+        className="flex cursor-pointer gap-2 items-center font-medium "
         onClick={toggleFilter}
       >
         <MdFilterList /> Filter
       </button>
 
       {selected && (
-        <div className="flex flex-col">
+        <div className="flex flex-col items-start justify-center text-[14px]  space-y-1">
           {radioOptions.map((item) => (
             <label
               htmlFor={item}
-              className="flex items-center gap-2 text-gray-500 font-medium cursor-pointer hover:bg-gray-100 rounded-md"
+              className="flex items-center gap-1.5  text-gray-500  cursor-pointer hover:bg-gray-100 w-full rounded-md "
             >
               <input type="radio" name="filter" id={item} />
               {item}
