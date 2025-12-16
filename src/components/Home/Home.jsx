@@ -50,7 +50,7 @@ function Home() {
                   <FaSearch
                     className="text-gray-400  cursor-pointer"
                     onClick={toggleSearch}
-                    size={20}
+                    size={17}
                   />
                 )}
               </div>

@@ -36,19 +36,19 @@ function LeftSideBar() {
         </p>
       </div>
       <div className=" w-full h-32 mt-2 border-b-2 border-b-gray-300 text-gray-500 text-sm pl-2 flex flex-col items-center justify-items-start">
-        <div className="w-full h-8 flex  gap-2  hover:bg-gray-100 rounded-md cursor-pointer">
+        <div className="w-full h-8 flex items-center  gap-2  hover:bg-gray-100 hover:text-blue-500 rounded-md cursor-pointer">
           <MdInventory2 size={18} />
-          <p className="font-bold text-gray-800">All Assets</p>
+          <p className="font-bold ">All Assets</p>
         </div>
-        <div className="w-full h-8 flex  gap-2  hover:bg-gray-100 rounded-md cursor-pointer">
+        <div className="w-full h-8 flex items-center gap-2  hover:bg-gray-100 hover:text-blue-500 rounded-md cursor-pointer">
           <MdFolder size={19} />
           <p>My Assets</p>
         </div>
-        <div className="w-full h-8 flex  gap-2  hover:bg-gray-100 rounded-md cursor-pointer">
+        <div className="w-full h-8 flex items-center gap-2  hover:bg-gray-100  hover:text-blue-500 rounded-md cursor-pointer">
           <MdDelete size={22} />
           <p>Trash</p>
         </div>
-        <div className="w-full h-8 flex  gap-2  hover:bg-gray-100 rounded-md cursor-pointer">
+        <div className="w-full h-8 flex items-center gap-2  hover:bg-gray-100 hover:text-blue-500 rounded-md cursor-pointer">
           <MdSync size={21} />
           <p>Sync</p>
         </div>

@@ -39,8 +39,8 @@ function Dropdown({ Category, options }) {
           {options.map((option) => (
             <label
               key={option}
-              htmlFor={options}
-              className="flex items-center gap-2.5  text-gray-500 font-normal hover:bg-gray-100 rounded-md"
+              htmlFor={option}
+              className="flex items-center gap-2.5  text-gray-500 font-normal hover:bg-gray-100 rounded-md cursor-pointer"
             >
               <input type="checkbox" name="Department" id={option} />
               {option}

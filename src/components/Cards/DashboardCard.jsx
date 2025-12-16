@@ -1,6 +1,6 @@
 import React from "react";
 import { HiOutlineDotsVertical } from "react-icons/hi";
-import { MdOutlineEdit } from "react-icons/md";
+import { MdOutlineEdit, MdOutlineEditNote } from "react-icons/md";
 import { FiImage } from "react-icons/fi";
 import CardDropdown from "./CardDropdown";
 
@@ -14,7 +14,7 @@ function DashboardCard() {
         <div className="flex justify-items-end w-[70%] h-[60%]  ">
           <ul className="flex w-full justify-end pl-3 pr-1.5 gap-1.5 mt-1">
             <li className="invisible group-hover:visible">
-              <MdOutlineEdit className="text-gray-400 cursor-pointer" />
+              <MdOutlineEdit className="text-blue-400 cursor-pointer hover:text-blue-500" />
             </li>
             <li className=" relative group/dots ">
               <HiOutlineDotsVertical className="text-gray-400 " />
